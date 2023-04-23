@@ -18,8 +18,7 @@ public class MessageController {
     private final MessageService messageService;
 
     @PostMapping
-    public ResponseEntity<String> addMessage(@RequestHeader(AUTHORIZATION) String token,
-                                             @RequestBody MessageDTO messageDTO) {
+    public ResponseEntity<String> addMessage(@RequestBody MessageDTO messageDTO) {
         messageService.addMessage(messageDTO);
         return  ResponseEntity.status(HttpStatus.CREATED).body(MESSAGE_2.getMessage());
     }
