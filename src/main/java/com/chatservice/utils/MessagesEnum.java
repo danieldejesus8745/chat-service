@@ -7,10 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum MessagesEnum {
 
-    MESSAGE_1("Error when trying to validate token"),
-    MESSAGE_2("Message sent with success"),
-    MESSAGE_3("Invalid Token"),
-    MESSAGE_4("Unable to validate token");
+    MESSAGE_1("Message sent successfully");
 
     private final String message;
 
